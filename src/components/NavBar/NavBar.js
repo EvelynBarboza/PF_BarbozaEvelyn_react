@@ -3,7 +3,7 @@ import CartWidget from "../CartWidget/CartWidget"
 const NavBar = () =>{
 return (
     <nav>
-        <h1>ANANDA Terapias Alternativas</h1>
+         <h1>ANANDA Terapias Alternativas</h1>
         <div>
             <button>Reiki</button>
             <button>Masajes</button>
@@ -11,7 +11,7 @@ return (
             <button>Regresiones</button>
             <button>Flores de Bach</button>
             <button>Tarot</button>
-        </div>
+    </div>
         <CartWidget/>
     </nav>
     )
