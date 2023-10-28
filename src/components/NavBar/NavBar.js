@@ -2,15 +2,16 @@ import CartWidget from "../CartWidget/CartWidget"
 
 const NavBar = () =>{
 return (
-    <nav>
+    <nav className="NavBar">
+        <link to= '/'>
          <h1>ANANDA Terapias Alternativas</h1>
-        <div>
-            <button>Reiki</button>
-            <button>Masajes</button>
-            <button>Registros Akashicos</button>
-            <button>Regresiones</button>
-            <button>Flores de Bach</button>
-            <button>Tarot</button>
+         </link>
+        <div className="Categories">
+            <NavLink to={'/category/Reiki'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Reiki</NavLink>
+            <NavLink to={'/category/Masajes'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>MAsajes</NavLink>
+            <NavLink to={'/category/RegistrosAkashicos'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Registros Akashicos</NavLink>
+            <NavLink to={'/category/Regresiones'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Regresiones</NavLink>
+            <NavLink to={'/category/Tarot'} className={({isActive}) => isActive ? 'ActiveOption' : 'Option'}>Tarot</NavLink>
     </div>
         <CartWidget/>
     </nav>
